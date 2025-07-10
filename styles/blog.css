@@ -5,6 +5,17 @@ body {
     padding: 0;
     color: #e0e0e0;
 }
+.banner {
+    background-color: #2a2a3d;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.banner h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+    color: #ffffff;
+}
 .navbar {
     background-color: #1a1a2b;
     padding: 15px 40px;
