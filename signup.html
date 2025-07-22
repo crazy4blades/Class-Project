@@ -5,6 +5,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Retailer Sign-Up | SCP Wholesalers</title>
+  <link rel="icon" href="Images/favicon.ico">
   <link rel="stylesheet" href="main.css">
   <link rel="stylesheet" href="styles/form.css" />
 </head>
@@ -14,6 +15,8 @@
   <header>
     <h1>SCP Wholesalers</h1>
     <nav class="navbar">
+      <input type="checkbox" id="checkbox-toggle">
+      <label for="checkbox-toggle" class="menu-btn"></label>
       <ul class="nav-links">
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About Us</a></li>
@@ -21,8 +24,8 @@
         <li><a href="products.html">Products</a></li>
         <li><a href="faq.html">FAQs</a></li>
         <li><a href="blog.html">Blogs</a></li>
-        <li><a href="locations.html">Warehouse Locations</a></li>
-        <li><a href="signup.html">Sign Up</a></li>
+        <li><a href="locations.html">Locations</a></li>
+        <li><a href="#" class="current">Sign Up</a></li>
       </ul>
     </nav>
   </header>
@@ -32,17 +35,17 @@
     <section class="hero">
       <h2>Retailer Sign-Up</h2>
     </section>
-    <section class="form-section">
+    <section class="container">
       <form action="success.html" method="POST">
 
         <!-- Business Info -->
         <fieldset>
           <legend>Business Information</legend>
 
-          <label for="businessName">Business Name</label>
+          <label for="businessName">Business Name<ast></ast></label>
           <input type="text" id="businessName" name="businessName" required />
 
-          <label for="businessType">Business Type</label>
+          <label for="businessType">Business Type<ast></ast></label>
           <select id="businessType" name="businessType" required>
             <option value="">Select Type</option>
             <option value="sole">Sole Proprietor</option>
@@ -50,10 +53,10 @@
             <option value="corp">Corporation</option>
           </select>
 
-          <label for="email">Business Email</label>
+          <label for="email">Business Email<ast></ast></label>
           <input type="email" id="email" name="email" required />
 
-          <label for="phone">Business Phone</label>
+          <label for="phone">Business Phone<ast></ast></label>
           <input type="tel" id="phone" name="phone" required />
         </fieldset>
 
@@ -73,7 +76,7 @@
         <fieldset>
           <legend>Additional Notes</legend>
           <label for="notes">Tell us more about your business or needs:</label>
-          <textarea id="notes" name="notes" rows="4" cols="50" placeholder="Optional..."></textarea>
+          <textarea id="notes" name="notes" style="margin: 1em;" rows="4" cols="50" placeholder="Optional..."></textarea>
         </fieldset>
 
         <!-- Form Actions -->

@@ -5,47 +5,107 @@
     <meta charset="UTF-8">
     <title>Products - SCP Wholesalers</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/main.css">
+    <link rel="icon" href="Images/favicon.ico">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="styles/table.css">
 </head>
 
 <body>
-    <nav class="navbar">
-        <div class="nav-logo">SCP Wholesalers</div>
-        <ul class="nav-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About Us</a></li>
-            <li><a href="contact.html">Contact Us</a></li>
-            <li><a href="products.html">Products</a></li>
-            <li><a href="faq.html">FAQs</a></li>
-            <li><a href="blog.html">Blogs</a></li>
-            <li><a href="locations.html">Warehouse Locations</a></li>
-            <li><a href="signup.html">Sign Up</a></li>
-        </ul>
-    </nav>
-    <section class="banner">
-        <h1>Our Premium Pet Food Selection</h1>
-    </section>
-    <section class="products-section">
-        <div class="product-card">
-            <h3>HealthyPaws Chicken & Rice</h3>
-            <p>Nutritious dry food for adult dogs with real chicken and whole grains.</p>
-            <div class="price">$29.99 / 15lb</div>
-        </div>
-        <div class="product-card">
-            <h3>WhiskerDelight Salmon Feast</h3>
-            <p>Grain-free wet food for cats made with wild-caught salmon.</p>
-            <div class="price">$1.49 / 3oz can</div>
-        </div>
-        <div class="product-card">
-            <h3>NatureBites Puppy Formula</h3>
-            <p>High-protein kibble designed for growing puppies of all breeds.</p>
-            <div class="price">$34.99 / 20lb</div>
-        </div>
-        <div class="product-card">
-            <h3>EcoTreats Dental Chews</h3>
-            <p>Natural dental treats that help reduce plaque and freshen breath.</p>
-            <div class="price">$12.99 / 30 chews</div>
-        </div>
+    <header>
+        <h1>SCP Wholesalers</h1>
+        <nav class="navbar">
+            <input type="checkbox" id="checkbox-toggle">
+            <label for="checkbox-toggle" class="menu-btn"></label>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="#" class="current">Products</a></li>
+                <li><a href="faq.html">FAQs</a></li>
+                <li><a href="blog.html">Blogs</a></li>
+                <li><a href="locations.html">Locations</a></li>
+                <li><a href="signup.html">Sign Up</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <table>
+            <caption>Pet Food & Treats Listing with Brand Names</caption>
+            <thead>
+                <tr>
+                    <th scope="col">Category</th>
+                    <th scope="col">Brand & Name</th>
+                    <th scope="col">Size</th>
+                    <th scope="col">Cost</th>
+                    <th scope="col">Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Dog Food -->
+                <tr>
+                    <td>Dog Food</td>
+                    <td><strong>Pawridge</strong> Beef & Barley Stew</td>
+                    <td>13 oz (can)</td>
+                    <td>$2.49</td>
+                    <td>Slow-cooked comfort food packed with hearty ingredients for adult dogs.</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><strong>FetchFuel</strong> Grain-Free Chicken Nuggets</td>
+                    <td>10 lb</td>
+                    <td>$18.99</td>
+                    <td>Bite-sized kibble designed for active pups with sensitive stomachs.</td>
+                </tr>
+
+                <!-- Cat Food -->
+                <tr>
+                    <td>Cat Food</td>
+                    <td><strong>Mewsli</strong> Tuna & Pumpkin Puree</td>
+                    <td>3 oz (pouch)</td>
+                    <td>$1.29</td>
+                    <td>Hydrating blend for picky cats—great for digestion and shine.</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><strong>WhiskerWell</strong> Duck & Sweet Potato Kibble</td>
+                    <td>5 lb</td>
+                    <td>$13.95</td>
+                    <td>Allergy-friendly dry food for skin and coat support.</td>
+                </tr>
+
+                <!-- Dog Treats -->
+                <tr>
+                    <td>Dog Treat</td>
+                    <td><strong>Chewtopia</strong> Cheddar Bones</td>
+                    <td>16 oz</td>
+                    <td>$8.49</td>
+                    <td>Cheese-packed snacks with an irresistible crunch and no fillers.</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><strong>BarkBites</strong> Chicken Jerky Strips</td>
+                    <td>6 oz</td>
+                    <td>$9.99</td>
+                    <td>Lean protein snacks with a chewy texture dogs love.</td>
+                </tr>
+
+                <!-- Cat Treats -->
+                <tr>
+                    <td>Cat Treat</td>
+                    <td><strong>NibbleNest</strong> Salmon Crunch Snacks</td>
+                    <td>2.5 oz</td>
+                    <td>$3.99</td>
+                    <td>Taurine-rich treats with a bold ocean flavor for feline health.</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><strong>VelvetWhisk</strong> Soft Creamy Centers</td>
+                    <td>2 oz (30 treats)</td>
+                    <td>$4.25</td>
+                    <td>Dual-layer snacks crafted for finicky cats with texture delight.</td>
+                </tr>
+            </tbody>
+        </table>
     </section>
 </body>
 

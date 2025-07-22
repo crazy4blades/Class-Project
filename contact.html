@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us | SCP Wholesalers</title>
+    <link rel="icon" href="Images/favicon.ico">
+    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="styles/form.css">
+</head>
+
+<body>
+    <header>
+        <h1>SCP Wholesalers</h1>
+        <nav class="navbar">
+            <input type="checkbox" id="checkbox-toggle">
+            <label for="checkbox-toggle" class="menu-btn"></label>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="#" class="current">Contact Us</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="faq.html">FAQs</a></li>
+                <li><a href="blog.html">Blogs</a></li>
+                <li><a href="locations.html">Locations</a></li>
+                <li><a href="signup.html">Sign Up</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h2>Contact Us</h2>
+        </section>
+
+        <section>
+            <h3>We're Here to Help</h3>
+            <p>Whether you're a retailer looking to place an order, a pet lover with a question, or a potential partner,
+                we’d love to hear from you. Fill out the form below or reach out using the info provided.</p>
+        </section>
+
+        <section class="contact-form">
+            <form action="submit-form.php" method="post">
+                <fieldset>
+                    <legend>Send Us a Message</legend>
+
+                    <label for="name">Name<ast></ast></label>
+                    <input type="text" id="name" name="name" required />
+
+                    <label for="email">Email<ast></ast></label>
+                    <input type="email" id="email" name="email" required />
+
+                    <label for="subject">Subject</label>
+                    <input type="text" id="subject" name="subject" />
+
+                    <label for="message">Message<ast></ast></label>
+                    <textarea id="message" name="message" rows="6" cols="50" required></textarea>
+
+
+                </fieldset>
+                <div class="form-actions">
+                    <button class="submit-btn" type="submit">Submit</button>
+                </div>
+            </form>
+        </section>
+
+        <section class="contact-details">
+            <h2>Visit or Call Us</h2>
+            <p>SCP Wholesalers Headquarters</p>
+            <p>123 Paw Street<br>Columbia, SC 29201</p>
+            <p>&#9742;: <a href="tel:+18005551234">(800) 555-1234</a></p>
+            <p>&#9993;: <a href="mailto:support@scpwholesalers.com">support@scpwholesalers.com</a></p>
+
+            <p>Our team is available Monday–Friday, 8:00 AM to 6:00 PM EST.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 SCP Wholesalers | Columbia, SC</p>
+    </footer>
+</body>
+
+</html>

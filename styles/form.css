@@ -6,13 +6,23 @@
   border-radius: 8px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
 }
+.contact-form {
+  max-width: 700px;
+  margin: 40px auto;
+  padding: 30px 40px;
+  border-radius: 8px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.7); /* smoother, more ambient shadow */
+}
 .checkboxes {
   display: flex;
   flex-wrap: wrap;
   gap: 5%;
   text-align: center;
 }
-
+ast::after{
+  content: "*";
+  color: red;
+}
 
 
 h2 {
@@ -64,7 +74,7 @@ input:focus, select:focus {
 
 .submit-btn {
   margin-top: 30px;
-  width: 100%;
+  width:80px;
   padding: 12px;
   background-color: #0078d4;
   color: white;
@@ -72,9 +82,12 @@ input:focus, select:focus {
   border-radius: 4px;
   font-size: 16px;
   cursor: pointer;
+  transition: background-color 0.3s ease;
+
+
 }
 
 .submit-btn:hover {
-  background-color: #005ea2;
+  background-color: red;
 }
 
