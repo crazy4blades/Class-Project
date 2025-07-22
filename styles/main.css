@@ -175,20 +175,6 @@ main {
   margin-bottom: 1rem;
 }
 
-.cta-button {
-  display: inline-block;
-  background-color: #004080;
-  color: #fff;
-  padding: 0.75rem 1.5rem;
-  border-radius: 5px;
-  font-weight: bold;
-  transition: background 0.3s ease;
-}
-
-.cta-button:hover {
-  background-color: #0066cc;
-}
-
 .features {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -302,37 +288,6 @@ footer {
     content: "\2716";
 }
 
-/* Submenu section */
-.nav-links li:has(.submenu) {
-    position: relative;
-
-    & small::after {
-        content: "\25b6";
-    }
-
-    /* right triangle */
-    & small {
-        margin-left: .25em;
-    }
-
-    &:hover>.submenu {
-        display: block;
-    }
-}
-
-.submenu {
-    position: absolute;
-    top: 0;
-    left: 100%;
-    background-color: steelblue;
-    color: white;
-    display: none;
-    width: 110%;
-
-    &>li a {
-        margin: 2px;
-    }
-}
 @media only screen and (min-width: 1200px) {
     
 
@@ -372,15 +327,5 @@ footer {
 
     #checkbox-toggle:checked~.nav-links {
         display: flex;
-    }
-
-    .nav-links li:has(.submenu) small::after {
-        content: "\25bc";
-    }
-
-    .submenu {
-        top: auto;
-        left: 0;
-        width: 100%;
     }
 }
