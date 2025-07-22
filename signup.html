@@ -43,10 +43,10 @@
           <legend>Business Information</legend>
 
           <label for="businessName">Business Name<ast></ast></label>
-          <input type="text" id="businessName" name="businessName" required />
+          <input type="text" id="businessName" name="businessName" required autocomplete="organization"/>
 
           <label for="businessType">Business Type<ast></ast></label>
-          <select id="businessType" name="businessType" required>
+          <select id="businessType" name="businessType" required autocomplete="off">
             <option value="">Select Type</option>
             <option value="sole">Sole Proprietor</option>
             <option value="llc">LLC</option>
@@ -54,10 +54,10 @@
           </select>
 
           <label for="email">Business Email<ast></ast></label>
-          <input type="email" id="email" name="email" required />
+          <input type="email" id="email" name="email" required autocomplete="email"/>
 
           <label for="phone">Business Phone<ast></ast></label>
-          <input type="tel" id="phone" name="phone" required />
+          <input type="tel" id="phone" name="phone" required autocomplete="tel"/>
         </fieldset>
 
         <!-- Product Preferences -->
@@ -81,8 +81,8 @@
 
         <!-- Form Actions -->
         <div class="form-actions">
-          <button type="submit">Submit</button>
-          <button type="reset">Reset</button>
+          <button class="submit-btn" type="submit">Submit</button>
+          <button class="reset-btn" type="reset">Reset</button>
         </div>
       </form>
     </section>
