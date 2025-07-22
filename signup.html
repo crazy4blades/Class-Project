@@ -1,71 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Retailer Sign-Up</title>
-    <link rel="stylesheet" href="styles/form.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Retailer Sign-Up | SCP Wholesalers</title>
+  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="styles/form.css" />
 </head>
+
 <body>
+  <!-- ================= HEADER ================= -->
+  <header>
+    <h1>SCP Wholesalers</h1>
     <nav class="navbar">
-        <div class="nav-logo">SCP Wholesalers</div>
-            <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="contact.html">Contact Us</a></li>
-                <li><a href="products.html">Products</a></li>
-                <li><a href="faq.html">FAQs</a></li>
-                <li><a href="blog.html">Blogs</a></li>
-                <li><a href="locations.html">Warehouse Locations</a></li>    
-                <li><a href="signup.html">Sign Up</a></li>
-            </ul>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="faq.html">FAQs</a></li>
+        <li><a href="blog.html">Blogs</a></li>
+        <li><a href="locations.html">Warehouse Locations</a></li>
+        <li><a href="signup.html">Sign Up</a></li>
+      </ul>
     </nav>
-    <div class="container">
-        <h2>Retailer Sign-Up</h2>
-        <form action="success.html" method="POST">
-          <fieldset>
-            <legend>Business Information</legend>
+  </header>
 
-            <label for="businessName">Business Name</label>
-            <input type="text" id="businessName" name="businessName" required />
+  <!-- ================= SIGN-UP FORM ================= -->
+  <main>
+    <section class="hero">
+      <h2>Retailer Sign-Up</h2>
+    </section>
+    <section class="form-section">
+      <form action="success.html" method="POST">
 
-            <label for="businessType">Business Type</label>
-            <select id="businessType" name="businessType" required>
-              <option value="">Select Type</option>
-              <option value="sole">Sole Proprietor</option>
-              <option value="llc">LLC</option>
-              <option value="corp">Corporation</option>
-            </select>
+        <!-- Business Info -->
+        <fieldset>
+          <legend>Business Information</legend>
 
-            <label for="email">Business Email</label>
-            <input type="email" id="email" name="email" required />
+          <label for="businessName">Business Name</label>
+          <input type="text" id="businessName" name="businessName" required />
 
-            <label for="phone">Business Phone</label>
-            <input type="tel" id="phone" name="phone" required />
-          </fieldset>
+          <label for="businessType">Business Type</label>
+          <select id="businessType" name="businessType" required>
+            <option value="">Select Type</option>
+            <option value="sole">Sole Proprietor</option>
+            <option value="llc">LLC</option>
+            <option value="corp">Corporation</option>
+          </select>
 
-          <fieldset>
-            <legend>Product Interests</legend>
-            <div class="checkboxes">
-              <label><input type="checkbox" name="products" value="dogFood" /> Dog Food</label>
-              <label><input type="checkbox" name="products" value="dogTreats" /> Dog Treats</label>
-              <label><input type="checkbox" name="products" value="catFood" /> Cat Food</label>
-              <label><input type="checkbox" name="products" value="catTreats" /> Cat Treats</label>
-              <label><input type="checkbox" name="products" value="catLiter" /> Cat Litter</label>
-            </div>
-          </fieldset>
+          <label for="email">Business Email</label>
+          <input type="email" id="email" name="email" required />
 
-          <fieldset>
-            <legend>Additional Notes</legend>
-            <label for="notes">Tell us more about your business or needs:</label>
-            <textarea id="notes" name="notes" rows="4" cols="50" placeholder="Optional..."></textarea>
-          </fieldset>
+          <label for="phone">Business Phone</label>
+          <input type="tel" id="phone" name="phone" required />
+        </fieldset>
 
-        <button type="submit">Submit</button>
-        <button type="reset">Reset</button>
+        <!-- Product Preferences -->
+        <fieldset>
+          <legend>Product Interests</legend>
+          <div class="checkboxes">
+            <label><input type="checkbox" name="products" value="dogFood" /> Dog Food</label>
+            <label><input type="checkbox" name="products" value="dogTreats" /> Dog Treats</label>
+            <label><input type="checkbox" name="products" value="catFood" /> Cat Food</label>
+            <label><input type="checkbox" name="products" value="catTreats" /> Cat Treats</label>
+            <label><input type="checkbox" name="products" value="catLitter" /> Cat Litter</label>
+          </div>
+        </fieldset>
+
+        <!-- Notes -->
+        <fieldset>
+          <legend>Additional Notes</legend>
+          <label for="notes">Tell us more about your business or needs:</label>
+          <textarea id="notes" name="notes" rows="4" cols="50" placeholder="Optional..."></textarea>
+        </fieldset>
+
+        <!-- Form Actions -->
+        <div class="form-actions">
+          <button type="submit">Submit</button>
+          <button type="reset">Reset</button>
+        </div>
       </form>
+    </section>
+  </main>
 
-    </div>
+  <!-- ================= FOOTER ================= -->
+  <footer>
+    <p>&copy; 2025 SCP Wholesalers | Columbia, SC</p>
+  </footer>
+
+  <!-- ================= SCRIPT ================= -->
+  <script src="js/forms.js"></script>
 </body>
-<script src="js/forms.js"></script>
+
 </html>

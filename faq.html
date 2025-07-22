@@ -3,53 +3,84 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>FAQs - SCP Wholesalers</title>
-  <link rel="stylesheet" href="styles/main.css">
+  <title>FAQs | SCP Wholesalers</title>
+  <link rel="stylesheet" href="main.css"/>
 </head>
+
 <body>
+  <!-- ================= HEADER ================= -->
+  <header>
+    <h1>SCP Wholesalers</h1>
     <nav class="navbar">
-      <div class="nav-logo">SCP Wholesalers</div>
       <ul class="nav-links">
         <li><a href="index.html">Home</a></li>
-              <li><a href="about.html">About Us</a></li>
-              <li><a href="contact.html">Contact Us</a></li>
-              <li><a href="products.html">Products</a></li>
-              <li><a href="faq.html">FAQs</a></li>
-              <li><a href="blog.html">Blogs</a></li>
-              <li><a href="locations.html">Warehouse Locations</a></li>    
-              <li><a href="signup.html">Sign Up</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="faq.html">FAQs</a></li>
+        <li><a href="blog.html">Blogs</a></li>
+        <li><a href="locations.html">Warehouse Locations</a></li>
+        <li><a href="signup.html">Sign Up</a></li>
       </ul>
     </nav>
-    <section class="banner">
-        <h1>Frequently Asked Questions</h1>
+  </header>
+
+  <!-- ================= PAGE BANNER ================= -->
+  <section class="hero">
+    <h2>Frequently Asked Questions</h2>
+  </section>
+
+  <!-- ================= FAQ SECTION ================= -->
+  <main>
+    <section class="faq-container">
+      <!-- FAQ Item -->
+      <div class="faq-item" onclick="toggleAnswer(this)">
+        <p class="faq-question">What types of pet food do you distribute?</p>
+        <div class="faq-answer">
+          We distribute a wide range of premium pet food brands for dogs, cats, and other small animals, all vetted for quality and nutrition.
+        </div>
+      </div>
+
+      <!-- FAQ Item -->
+      <div class="faq-item" onclick="toggleAnswer(this)">
+        <p class="faq-question">Do you offer nationwide shipping?</p>
+        <div class="faq-answer">
+          Yes, we serve retail partners across the United States through our 50 distribution centers.
+        </div>
+      </div>
+
+      <!-- FAQ Item -->
+      <div class="faq-item" onclick="toggleAnswer(this)">
+        <p class="faq-question">How can I become a retail partner?</p>
+        <div class="faq-answer">
+          You can contact our sales team through the Sign Up page or email us directly to begin the onboarding process.
+        </div>
+      </div>
+
+      <!-- FAQ Item -->
+      <div class="faq-item" onclick="toggleAnswer(this)">
+        <p class="faq-question">Do you support shelters and rescues?</p>
+        <div class="faq-answer">
+          Yes, we actively support animal welfare organizations through donations and community programs.
+        </div>
+      </div>
+
+      <!-- FAQ Item -->
+      <div class="faq-item" onclick="toggleAnswer(this)">
+        <p class="faq-question">What makes SCP Wholesalers different?</p>
+        <div class="faq-answer">
+          Our commitment to quality, customer service, and animal well-being sets us apart. We combine advanced logistics with a personal touch.
+        </div>
+      </div>
     </section>
-    <div class="container">
+  </main>
 
-        <div class="faq-item" onclick="toggleAnswer(this)">
-            <p class="faq-question">What types of pet food do you distribute?</p>
-            <div class="faq-answer">We distribute a wide range of premium pet food brands for dogs, cats, and other small animals, all vetted for quality and nutrition.</div>
-        </div>
+  <!-- ================= FOOTER ================= -->
+  <footer>
+    <p>&copy; 2025 SCP Wholesalers | Columbia, SC</p>
+  </footer>
 
-        <div class="faq-item" onclick="toggleAnswer(this)">
-            <p class="faq-question">Do you offer nationwide shipping?</p>
-            <div class="faq-answer">Yes, we serve retail partners across the United States through our 50 distribution centers.</div>
-        </div>
-
-        <div class="faq-item" onclick="toggleAnswer(this)">
-          <p class="faq-question">How can I become a retail partner?</p>
-          <div class="faq-answer">You can contact our sales team through the Sign Up page or email us directly to begin the onboarding process.</div>
-        </div>
-
-        <div class="faq-item" onclick="toggleAnswer(this)">
-            <p class="faq-question">Do you support shelters and rescues?</p>
-            <div class="faq-answer">Yes, we actively support animal welfare organizations through donations and community programs.</div>
-        </div>
-
-        <div class="faq-item" onclick="toggleAnswer(this)">
-            <p class="faq-question">What makes SCP Wholesalers different?</p>
-            <div class="faq-answer">Our commitment to quality, customer service, and animal well-being sets us apart. We combine advanced logistics with a personal touch.</div>
-        </div>
-    </div>
-    <script src="js/faq.js"></script>
+  <!-- ================= SCRIPT ================= -->
+  <script src="js/faq.js"></script>
 </body>
 </html>

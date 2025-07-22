@@ -14,6 +14,11 @@ header {
     align-items: center;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
 }
+header h1 {
+    text-align: center;
+    margin-bottom: 0.5rem;
+    font-style: italic;
+}
 
 .logo {
     font-size: 24px;
@@ -37,7 +42,7 @@ p {
 }
 
 .faq-item {
-    background-color: #2a2a3d;
+    background-color: yellow;
     border-radius: 6px;
     margin-bottom: 15px;
     padding: 15px 20px;
