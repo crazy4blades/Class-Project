@@ -212,6 +212,10 @@ checkmark::after {
     margin: auto;
   }
 
+  #checkbox-toggle:checked~.nav-links {
+    display: flex;
+  }
+
   .menu-btn {
     display: none;
   }
